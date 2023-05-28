@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+  - name: apache2 will be installed
+    apt:
+      name: apache2
+      state: present
+  
+  - name: tree will be installes
+    apt:
+      name: tree
+      state: present

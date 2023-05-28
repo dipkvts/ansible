@@ -1,0 +1,20 @@
+---
+- myStudents:
+  - name: deep1
+    ph: 9898989
+    address:
+    - id: permanent
+      vill: garh1
+      state: bh1
+    - id: temporary
+      vill: st1
+      state: del1
+  - name: deep2
+    ph: 7878787
+    address:
+    - id: permanent
+      vill: garh2
+      state: bh2
+    - id: temporary
+      vill: st2
+      state: del2
