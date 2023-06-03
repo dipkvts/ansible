@@ -5,24 +5,24 @@
   tasks:
   - name: apache2 will be installed
     apt:
-      name: apache2
+      name: {{web-appln-for-ubuntu}}
       state: present
     when: ansible_os_family=="Debian"
 
   - name: apache2 will be started
     service:
-      name: apache2
+      name: {{web-appln-for-ubuntu}}
       state: started
     when: ansible_os_family=="Debian"
 
   - name: apache2 getting installed for RedHat
     ansible.builtin.dnf:
-      name: httpd
+      name: {{web-appln-for-redhat}}
       state: present
     when: ansible_os_family=="RedHat"
 
   - name: apache2 starting on redhat
     service:
-      name: httpd
+      name: {{web-appln-for-redhat}}
       state: started
     when: ansible_os_family=="RedHat"

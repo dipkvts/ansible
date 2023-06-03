@@ -9,3 +9,7 @@
 [mydbservers]
 172.31.38.45
 172.31.40.83
+
+[mywebservers: vars]
+web-appln-for-ubuntu: apache2
+web-appln-for-redhat: httpd
