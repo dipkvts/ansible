@@ -11,5 +11,5 @@
 172.31.40.83
 
 [mywebservers:vars]
-web-appln-for-ubuntu= apache2222222222222
-web-appln-for-redhat= httpd
+webapplnforubuntu= apache2222222222222
+webapplnforredhat= httpd
