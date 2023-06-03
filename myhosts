@@ -10,6 +10,6 @@
 172.31.38.45
 172.31.40.83
 
-[mywebservers: vars]
+[mywebservers:vars]
 web-appln-for-ubuntu: apache2222222222222
 web-appln-for-redhat: httpd
