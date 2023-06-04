@@ -1,0 +1,11 @@
+---
+- hosts: 172.31.38.27
+  become: yes
+  vars:
+   myvar1: git
+   myvar2: tree
+  tasks:
+   - name: I want to display my local variable
+     debug:
+      msg: "{{myvar1}}"
+      
