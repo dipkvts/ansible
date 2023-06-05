@@ -8,7 +8,7 @@
    - name: I need to debug and view result of the above executed linux command
      debug:
        msg: "{{mycommandresult}}"
-
+       
    - name: Installing git
      apt:
        name: git
