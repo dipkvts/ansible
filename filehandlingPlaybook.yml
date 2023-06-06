@@ -5,4 +5,8 @@
    - include_tasks: filehandling.yml
    - name: I need to install apache2
      apt:
-      name: apache2
+       name: apache2
+   - name: Copy index file
+     copy:
+       src: myIndexFile
+       dest: /var/www/html/index.html
