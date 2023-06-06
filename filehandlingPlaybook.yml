@@ -1,0 +1,8 @@
+---
+- hosts: 172.31.38.27
+  become: yes
+  tasks:
+   - include_files: filehandling.yml
+   - name: I need to install apache2
+     apt:
+      name: apache2
