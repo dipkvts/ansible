@@ -21,5 +21,5 @@
 
    - name: Need to copy a dynamic file into node server
      template:
-       src: myindexfile.j2
+       src: myindexfile1.j2
        dest:  /var/www/html/index.html
