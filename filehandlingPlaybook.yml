@@ -23,3 +23,10 @@
      template:
        src: myindexfile1.j2
        dest:  /var/www/html/index.html
+     notify: restartMyWebServer
+
+  handlers:
+   - name: restartMyWebServer
+     service:
+       name: apache2
+       state: restarted
