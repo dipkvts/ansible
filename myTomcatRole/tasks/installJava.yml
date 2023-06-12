@@ -1,0 +1,10 @@
+---
+# Installs java
+- name: update system packages
+  apt: # check 'apt' module docs
+    update_cache: yes # updates system packages
+
+- name: install java
+  apt:
+    name: default-jdk # installs java
+    state: present

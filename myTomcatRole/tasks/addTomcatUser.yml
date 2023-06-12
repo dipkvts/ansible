@@ -1,0 +1,8 @@
+---
+#This creates a user
+- name: create tomcat user
+  user:
+    name: tomcat #name of the user
+    home: /opt/tomcat #sets home directory for 'tomcat' user
+    shell: /bin/false
+    state: present

@@ -1,0 +1,16 @@
+---
+- name: download tomcat tar.gz file
+  get_url: # this module downloads a file from internet
+    url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.0/bin/apache-tomcat-10.0.0.tar.gz
+    dest: /home/ubuntu/apache-tomcat-10.0.0.tar.gz
+    force_basic_auth: yes
+
+- name: create a folder
+  file:
+    path: /opt/tomcat # folder gets created with this name
+    state: directory # to denote that u want to create a folder
+
+- name: extract downloaded tomcat file
+  command: # this module is used to run any linux command
+    cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-10.0.0.tar.gz -C /opt/tomcat --strip-components=1 # file is extracted at /opt/tomcat location
+    creates: /opt/tomcat/LICENCE # if LICENCE file is present at this location, it means its already extracted and command will not run again ie it will not try to extract again, else command will rerun and try to extraxt again
