@@ -1,6 +1,7 @@
 ---
+# Downloads below war file and places in deployment folder
 - name: deploy java application on prod nodes
-  get_url: # Downloads below war file and places in deployment folder
+  get_url:
     url: https://deepak3.s3.ap-south-1.amazonaws.com/login.war
     dest: /opt/tomcat/webapps/login.war
     force_basic_auth: yes

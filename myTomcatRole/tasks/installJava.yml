@@ -1,7 +1,7 @@
 ---
 # Installs java
 - name: update system packages
-  apt: # check 'apt' module docs
+  apt:
     update_cache: yes # updates system packages
 
 - name: install java

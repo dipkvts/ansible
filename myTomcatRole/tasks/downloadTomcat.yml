@@ -5,12 +5,12 @@
     dest: /home/ubuntu/apache-tomcat-10.0.0.tar.gz
     force_basic_auth: yes
 
-- name: create a folder
+- name: create a folder for extraction
   file:
     path: /opt/tomcat # folder gets created with this name
     state: directory # to denote that u want to create a folder
 
-- name: extract downloaded tomcat file
+- name: extract downloaded tomcat
   command: # this module is used to run any linux command
     cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-10.0.0.tar.gz -C /opt/tomcat --strip-components=1 # file is extracted at /opt/tomcat location
     creates: /opt/tomcat/LICENCE # As soon as this command gets executed, "LICENCE" file gets created. So if LICENCE is present at this location, it means its already extracted and command will not run again, else command will rerun and try to extraxt again

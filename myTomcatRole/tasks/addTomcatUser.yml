@@ -1,8 +1,8 @@
 ---
-#This creates a user
+# This creates a user on prod node servers
 - name: create tomcat user
   user:
-    name: tomcat #name of the user
-    home: /opt/tomcat #sets home directory for 'tomcat' user
+    name: tomcat # Name of the user
+    home: /opt/tomcat # Sets home directory for 'tomcat' user
     shell: /bin/false
     state: present
