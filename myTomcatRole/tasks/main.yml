@@ -5,3 +5,5 @@
 - include_tasks: downloadTomcat.yml
 - include_tasks: filePermissions.yml
 - include_tasks: tomcatDashboard.yml
+- include_tasks: startTomcat.yml
+- include_tasks: deployJavaApplication.yml
